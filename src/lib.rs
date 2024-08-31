@@ -286,7 +286,7 @@ impl TrayIconBuilder {
 #[derive(Clone)]
 pub struct TrayIcon {
     id: TrayIconId,
-    tray: Rc<RefCell<platform_impl::TrayIcon>>,
+    pub tray: Rc<RefCell<platform_impl::TrayIcon>>,
 }
 
 impl TrayIcon {
